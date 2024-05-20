@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-const Register = () => {
+const Login = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-[#10141E] pt-40">
       <div>
@@ -31,9 +32,16 @@ const Register = () => {
             Login to your account
           </button>
         </form>
+
+        <p className="text-sm text-center pt-4">
+          Don't have an account?{" "}
+          <span className="text-[#fc4747] hover:text-white">
+            <Link href="/register">Sign Up</Link>{" "}
+          </span>
+        </p>
       </div>
     </div>
   );
 };
 
-export default Register;
+export default Login;

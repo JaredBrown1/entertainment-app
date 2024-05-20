@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Register = () => {
   return (
@@ -37,6 +38,13 @@ const Register = () => {
             Create an account
           </button>
         </form>
+
+        <p className="text-sm text-center pt-4">
+          Already have an account?{" "}
+          <span className="text-[#fc4747] hover:text-white">
+            <Link href="/login">Login</Link>{" "}
+          </span>
+        </p>
       </div>
     </div>
   );
