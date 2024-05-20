@@ -19,18 +19,21 @@ const Register = () => {
             type="email"
             placeholder="Email address"
             className="bg-[#161D2F] mt-8 border-b-2 border-[#5A698F] h-[37px] pl-4 pb-4"
+            required
           />
           <input
             type="password"
             placeholder="Password"
             className="bg-[#161D2F] mt-8 border-b-2 border-[#5A698F] h-[37px] pl-4 pb-4"
+            required
           />
           <input
             type="password"
             placeholder="Repeat password"
             className="bg-[#161D2F] mt-8 border-b-2 border-[#5A698F] h-[37px] pl-4 pb-4"
+            required
           />
-          <button className="bg-[#FC4747] rounded-md h-[48px] mt-8">
+          <button className="bg-[#FC4747] rounded-md h-[48px] mt-8 hover:bg-white hover:text-black">
             Create an account
           </button>
         </form>
